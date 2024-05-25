@@ -92,22 +92,69 @@ A função ```int()``` converte a entrada do usuário de string para um número 
 O número inteiro inserido pelo usuário é armazenado na variável ```numero```.
 ``` ruby
 resultado = ( (texto  + ' ' ) * numero)
-
 ```
 
 Repete a string armazenada em texto o número de vezes especificado por ```numero``` utilizando o operador *.
 O resultado da repetição é armazenado na variável resultado.
 ```ruby
 print( resultado )
-
 ```
 
 Utiliza a função ```print() ```para exibir a string resultante.
 A mensagem "A string resultante é:" é exibida seguida pelo valor da variável resultado.
 Executando este código, o programa solicitará ao usuário que insira uma string e um número inteiro. Em seguida, exibirá a string repetida o número de vezes especificado pelo usuário.
 
+-----
+
+# 3. Vamos solicitar como entra dois números e depois vamos realizar uma operação simples entre eles.
 
 
 
+```ruby
+
+# Solicita ao usuário que insira o primeiro número e armazena na variável 'numero1'
+# Utiliza a função float() para permitir números decimais
+numero1 = float(input("Por favor, insira o primeiro número: "))
+
+# Solicita ao usuário que insira o segundo número e armazena na variável 'numero2'
+# Utiliza a função float() para permitir números decimais
+numero2 = float(input("Por favor, insira o segundo número: "))
+
+# Realiza uma operação simples entre os dois números, por exemplo, a soma
+resultado = int(numero1 + numero2)
+
+# Exibe o resultado da operação
+print ("O resultado da soma é:", resultado)
+```
+
+# Explicação passo a passo:
+```ruby
+numero1 = intt(input("Por favor, insira o primeiro número: "))
+```
+
+Utiliza a função input() para solicitar ao usuário que insira o primeiro número.
+A mensagem "Por favor, insira o primeiro número: " é exibida para orientar o usuário.
+A função int() converte a entrada do usuário de string para um número inteiro.
+O número inserido pelo usuário é armazenado na variável numero1.
+```ruby
+numero2 = int(input("Por favor, insira o segundo número: "))
+```
 
 
+Utiliza a função input() para solicitar ao usuário que insira o segundo número.
+A mensagem "Por favor, insira o segundo número: " é exibida para orientar o usuário.
+A função int() converte a entrada do usuário de string para um número inteiro.
+O número inserido pelo usuário é armazenado na variável numero2.
+```ruby
+resultado = numero1 + numero2
+```
+
+Realiza a adição dos números armazenados nas variáveis numero1 e numero2.
+O resultado da operação é armazenado na variável resultado.
+```ruby
+print("O resultado da adição é:", resultado)
+```
+
+Utiliza a função print() para exibir o resultado da operação.
+A mensagem "O resultado da adição é:" é exibida seguida pelo valor da variável resultado.
+Executando este código, o programa solicitará ao usuário que insira dois números e, em seguida, exibirá o resultado da adição desses números. Se desejar realizar uma operação diferente (como subtração, multiplicação ou divisão), basta alterar a operação na linha que calcula resultado.
