@@ -158,3 +158,96 @@ print("O resultado da adição é:", resultado)
 Utiliza a função print() para exibir o resultado da operação.
 A mensagem "O resultado da adição é:" é exibida seguida pelo valor da variável resultado.
 Executando este código, o programa solicitará ao usuário que insira dois números e, em seguida, exibirá o resultado da adição desses números. Se desejar realizar uma operação diferente (como subtração, multiplicação ou divisão), basta alterar a operação na linha que calcula resultado.
+
+
+-----
+
+# Criando uma Calculadora 
+
+``` ruby
+# Solicita ao usuário que insira o primeiro número e armazena na variável 'numero1'
+numero1 = float(input("Por favor, insira o primeiro número: "))
+
+# Solicita ao usuário que insira o segundo número e armazena na variável 'numero2'
+numero2 = float(input("Por favor, insira o segundo número: "))
+
+# Solicita ao usuário que insira a operação desejada e armazena na variável 'operacao'
+# A operação deve ser uma das seguintes: +, -, *, /
+operacao = input("Por favor, insira a operação desejada (+, -, *, /): ")
+
+# Inicializa a variável 'resultado' como None
+resultado = None
+
+# Verifica qual operação foi escolhida e realiza a operação correspondente
+if operacao == '+':
+    resultado = numero1 + numero2
+elif operacao == '-':
+    resultado = numero1 - numero2
+elif operacao == '*':
+    resultado = numero1 * numero2
+elif operacao == '/':
+    # Verifica se o segundo número não é zero antes de realizar a divisão
+    if numero2 != 0:
+        resultado = numero1 / numero2
+    else:
+        print("Erro: Divisão por zero não é permitida.")
+else:
+    print("Erro: Operação inválida.")
+
+# Se a operação foi válida e o resultado foi calculado, exibe o resultado
+if resultado is not None:
+    print(f"O resultado de {numero1} {operacao} {numero2} é: {resultado}")
+```
+
+# Explicação passo a passo:
+
+
+`` ruby`
+numero1 = float(input("Por favor, insira o primeiro número:``` "))
+
+Solicita ao usuário que insira o primeiro número e o conv rubyerte para um número decimal (float).
+```
+nume```ro2 = float(input("Por favor, insira o segundo número: "))
+
+Solicita ao usuário que insira o segundo número e o conv rubyerte para um número decimal (float).
+```
+oper```acao = input("Por favor, insira a operação desejada (+, -, *, /): ")
+
+Solicita ao usuário que insira a operação desejada (adição, subtração, multiplicação ou divisão).
+``` ruby
+resultado = None
+```
+Inicializa a variável resultado como None para depois armazenar o resultado da operação.
+i`` ruby`
+f operacao == '+':
+```
+Verifica se a operação escolhida é adição e, se for, calcula a soma de numero1 e numero2.
+``` ruby
+elif operacao == '-':
+```
+Verifica se a operação escolhida é subtração e, se for, calcula a diferença entre numero1 e numero2.
+``` ruby
+elif operacao == '*':
+```
+Verifica se a operação escolhida é multiplicação e, se for, calcula o produto de numero1 e numero2.
+``` ruby
+elif operacao == '/':
+```
+Verifica se a operação escolhida é divisão.
+Antes de realizar a divisão, verifica se numero2 não é zero para evitar a divisão por zero.
+else:
+
+Se a operação inserida não for válida, exibe uma mensagem de erro.
+if resultado is not None:
+
+Se a operação foi válida e o resultado foi calculado, exibe o resultado da operação.
+Este código cria uma calculadora simples que realiza operações básicas entre dois números fornecidos pelo usuário e exibe o resultado.
+
+
+
+
+
+
+
+
+
