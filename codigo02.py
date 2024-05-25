@@ -7,8 +7,9 @@ numero = int(input("Por favor, insira um número inteiro: "))
 
 # Repete a string 'texto' o número de vezes informado pelo usuário
 # Utiliza o operador '*' para repetir a string
-resultado = texto * numero
+resultado = ( (texto  + ' ' ) * numero)
 
 # Exibe a string resultante da repetição
-print("A string resultante é:", resultado)
+print(resultado)
+
 

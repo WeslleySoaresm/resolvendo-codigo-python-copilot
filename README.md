@@ -91,14 +91,14 @@ A mensagem "Por favor, insira um número inteiro: " é exibida para orientar o u
 A função ```int()``` converte a entrada do usuário de string para um número inteiro.
 O número inteiro inserido pelo usuário é armazenado na variável ```numero```.
 ``` ruby
-resultado = texto * numero
+resultado = ( (texto  + ' ' ) * numero)
 
 ```
 
 Repete a string armazenada em texto o número de vezes especificado por ```numero``` utilizando o operador *.
 O resultado da repetição é armazenado na variável resultado.
 ```ruby
-print("A string resultante é:", resultado) 
+print( resultado )
 
 ```
 
